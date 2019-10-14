@@ -17,8 +17,8 @@ public class Switchstatement {
 		do
 		{
 			
-		
-		
+			
+		nMes=0;
 		//input data validation
 		while(nMes<=0)
 		{
@@ -28,7 +28,7 @@ public class Switchstatement {
         {
         	System.out.println("Dato No Valido");}
 	}
-	
+		
      switch (nMes) {
      case 1: System.out.println("january");
      break;
@@ -57,10 +57,11 @@ public class Switchstatement {
      default: System.out.println("Not Valid");
      break;
      }
-     System.out.println("do yoiu wish to see another month?(y/n))");
-     }while (answer=='s');
-		
+     System.out.println("do you wish to see another month?(y/n))");
      answer=input.next().charAt(0);
+     }while (answer=='y');
+		
+    
 		
 	
 		}
